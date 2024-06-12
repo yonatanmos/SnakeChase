@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Brozer Icon" type="SnakeChaseIcon" href="Icon Brozer.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeChase</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="startScreen" class="screen">
+        <div class="cube-paths">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <div class="overlay">
+            <h1>SnakeChase</h1>
+            <button onclick="startGame()">Play</button>
+            <div class="social-links">
+                <a href="https://www.youtube.com/channel/UClN8MVhZIWKjuR1dYUznI6A" target="_blank">YouTube</a>
+                <a href="https://discord.gg/Nnkr66vH" target="_blank">Discord</a>
+                <a href="https://x.com/MosYonatan" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div id="gameScreen" class="screen">
+        <h1>SnakeChase</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Best Score: <span id="bestScore">0</span></p>
+        </div>
+    </div>
+    <div id="gameOverScreen" class="screen">
+        <h1>Game Over</h1>
+        <button onclick="startGame()">Play Again</button>
+        <button onclick="goToMenu()">Main Menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
